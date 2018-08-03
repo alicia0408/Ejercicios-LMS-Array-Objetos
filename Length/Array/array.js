@@ -34,3 +34,30 @@ function findPairForSum(array, number) {
 	return newArray;
 
 }
+
+
+function findShortestOfThreeWords(word1, word2, word3) {
+	let wordsArr = [word1, word2, word3];// declaro una variable con el array
+	let shortestWord = word1;
+
+	for (let i = 0; i < wordsArr.length; i++) {// itero en el array
+		if (wordsArr[i].length < shortestWord.length) {// se crea la condicion donde se compara  las palabras.
+			let shortestWord = wordsArr[i];// la variable es igual al resultado de la comparacion
+		}
+	}
+	return shortestWord;
+
+
+	function filterOddElements(arr) {
+		let num = [];// se declara variable vacia
+
+		for (let i = 0; i < arr.length; i++) {// se recorre los elementos del array
+			if (arr[i] % 2 !== 0) {// se crea la condicion donde el array el residuo dado por el resultado de la division por 2 es distinto de 0 y por eso es impar
+				num.push(arr[i]);// se pushea el resultado del arreglo a la variable que tenemos vacia
+			}
+		}
+		return num;
+	}
+
+
+}
