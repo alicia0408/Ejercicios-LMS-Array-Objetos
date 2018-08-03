@@ -9,3 +9,8 @@ function getElementOfArrayProperty(obj, key, index) {
 
 	return obj[key][index];
 }
+
+function addObjectProperty(obj1, key, obj2) {
+	obj1[key] = obj2; 
+	return obj1;
+}
