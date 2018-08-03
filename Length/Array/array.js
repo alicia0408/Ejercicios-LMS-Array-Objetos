@@ -3,21 +3,21 @@ function getNthElement(array, n) {
 }
 
 function areValidCredentials(nombre, contraseña) {
-	let nombre = nombre.length;
+	let nombre = nombre.length;// se declara las variables donde se le coloca length que devuelve la cantidad de elementos 
 	let contraseña = contraseña.length;
 
-	if (nombre > 3 && contraseña >= 8) {
-		return true 
+	if (nombre > 3 && contraseña >= 8) { // se crea la condicion donde se indica que el nombre debe ser mayor a 3 caractres y la contraseña mayo o igual a 8.
+		return true // declara que es true si se cumple esta condicion
 	} else {
-		return false
+		return false// si no es falso
 	} 
 
 }
 function computeSumOfAllElements(arr) {
-	let suma = 0;
-
+	let suma = 0;// se crea una variable en cero,puede ser null o vacia,donde luego se van a ir integrando la suma de los elementos,hace papel de contenedor.
+//se itera en los elementos 
 	for (let i = 0; i < arr.length; i++) {
-		suma += arr[i];
+		suma += arr[i];// se declara suma y se le indica que se le va ir integrando o sumando la suma de los elementos del array.
 	}
 	return suma;
 }
