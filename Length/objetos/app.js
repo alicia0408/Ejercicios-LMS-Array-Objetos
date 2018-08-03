@@ -14,3 +14,12 @@ function addObjectProperty(obj1, key, obj2) {
 	obj1[key] = obj2; 
 	return obj1;
 }
+
+function getAllKeys(obj) {
+	array = [];
+	for (let key in obj) {
+		array.push(key);
+	}
+	return array;
+
+}
