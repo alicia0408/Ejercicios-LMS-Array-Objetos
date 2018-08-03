@@ -21,3 +21,15 @@ function computeSumOfAllElements(arr) {
 	}
 	return suma;
 }
+
+function findShortestOfThreeWords(word1, word2, word3) {
+	let wordsArr = [word1, word2, word3];
+	let shortestWord = word1;
+
+	for (var i = 0; i < wordsArr.length; i++) {
+		if (wordsArr[i].length < shortestWord.length) {
+			shortestWord = wordsArr[i];
+		}
+	}
+	return shortestWord;
+}
