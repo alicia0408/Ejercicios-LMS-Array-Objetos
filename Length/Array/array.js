@@ -37,15 +37,15 @@ function findPairForSum(array, number) {
 
 
 function findShortestOfThreeWords(word1, word2, word3) {
-	let wordsArr = [word1, word2, word3];// declaro una variable con el array
-	let shortestWord = word1;
+	let palabras = [word1, word2, word3];// declaro una variable con el array
+	let palabrasCortas = word1;
 
-	for (let i = 0; i < wordsArr.length; i++) {// itero en el array
-		if (wordsArr[i].length < shortestWord.length) {// se crea la condicion donde se compara  las palabras.
-			let shortestWord = wordsArr[i];// la variable es igual al resultado de la comparacion
+	for (let i = 0; i < palabras.length; i++) {// itero en el array
+		if (palabras[i].length < palabrasCortas.length) {// se crea la condicion donde se compara  las palabras.
+			let palabrasCortas = palabras[i];// la variable es igual al resultado de la comparacion
 		}
 	}
-	return shortestWord;
+	return palabrasCortas;
 
 
 	function filterOddElements(arr) {
