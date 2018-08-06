@@ -95,3 +95,7 @@ function transformEmployeeData(array) {
 	return data
 }
 
+function addArrayProperty(obj, key, array) {
+	obj[key] = array
+	return array;
+}
