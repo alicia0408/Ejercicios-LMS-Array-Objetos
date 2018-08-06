@@ -52,3 +52,13 @@ function transformFirstAndLast(array) {
 	
 	return result;
 }
+
+function listAllValues(obj) {
+	let valueArr = [];
+	for (let i in obj) {
+		valueArr.push(obj[i]);
+	}
+
+
+	return valueArr;
+}
