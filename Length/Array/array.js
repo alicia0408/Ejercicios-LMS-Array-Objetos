@@ -62,3 +62,10 @@ function findShortestOfThreeWords(word1, word2, word3) {
 
 }
 
+function calculateBillTotal(preTaxAndTipAmount) {
+	let impuesto = preTaxAndTipAmount * 0.095; // se multiplica porl pre impuesto y la cantidad anterior de propina por el porcentaje de impuesto y propina dado.
+	let propina = preTaxAndTipAmount * 0.150;
+
+	return preTaxAndTipAmount + impuesto + propina; // retorna la suma del pre impuesto y pre propina con el rsultado de las multipliaciones anteriores.
+
+}
