@@ -23,8 +23,8 @@ function computeSumOfAllElements(arr) {
 }
 function findPairForSum(array, number) {
 
-	for (var i = 0; i < array.length; i++) {// se itera en la lista de numeros y se da una suma objetivo.
-		for (var j = i + 1; j < array.length; j++) { // se enlaza el primer for con el segundo utilizando el i + 1 para que pueda sumar apartir del primer elemento (1er for) 
+	for (let i = 0; i < array.length; i++) {// se itera en la lista de numeros y se da una suma objetivo.
+		for (let j = i + 1; j < array.length; j++) { // se enlaza el primer for con el segundo utilizando el i + 1 para que pueda sumar apartir del primer elemento (1er for) 
 			if (array[i] + array[j] == number) { // aqui se crea la condicion donde al sumar ambos elementos es igual a la suma de objetivo.
 				 let newArray = [array[i], array[j]]; // se crea un nuevo array con ambos elementos complementados.
 			}
@@ -85,5 +85,21 @@ function findShortestWordAmongMixedElements(array) {
 	}
 	return cadena;
 
+
+}
+
+function findSmallestNumberAmongMixedElements(array) {
+	let newArray = [];
+	let number = 0;
+	for (let i = 0; i < array.length; i++) {
+		if (typeof (array[i]) === "number" && array[i] < 5) { // se crea la condicion donde el  valor de array debe ser numero y menor de 5 carateres
+			newArray.push(array[i]);// se pushea el arreglo nuevo de numero
+			number = newArray[0];
+		}
+		else if (array.length === 0) { // si el arreglo esta vacio devuelve cero
+			number += 0;
+		}
+	}
+	return number;
 
 }
