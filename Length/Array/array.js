@@ -69,3 +69,21 @@ function calculateBillTotal(preTaxAndTipAmount) {
 	return preTaxAndTipAmount + impuesto + propina; // retorna la suma del pre impuesto y pre propina con el rsultado de las multipliaciones anteriores.
 
 }
+
+
+function findShortestWordAmongMixedElements(array) {
+	let newArray = []; // se declara una variable con un arreglo vacio 
+	let cadena  = ""; // se declara una variable con un string vacio, en esta variable es donde se va a devolver el nuevo array con los string
+	for (let i = 0; i < array.length; i++) { // se itera en el array, en la cadena de string que esta dentro de array.
+		if (typeof (array[i]) === "string" && array[i].length < 5) {// se la crea la condición donde en la cadena debe buscar solo valores de  string y que devuelva una longitud de menos de 5 carateres.
+			newArray.push(array[i]);// se pushea a la variable newarray el string localizado
+			cadena = newArray[0];
+		}
+		else if (array.length === 0) {//si el array dado es igual a 0 o vacio debe volver una cadena vacia.
+			cadena += "";
+		}
+	}
+	return cadena;
+
+
+}
