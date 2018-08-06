@@ -62,3 +62,11 @@ function listAllValues(obj) {
 
 	return valueArr;
 }
+
+function convertObjectToList(obj) {
+	let convert = Object.keys(obj).map(function (key) {
+		return [key, obj[key]];
+	});
+	return convert;
+
+}
