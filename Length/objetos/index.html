@@ -5,23 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<p>Escriba una función llamada getElementOfArrayProperty. Dado un objeto, una clave y un índice numérico, getElementOfArrayProperty
-	devuelve el valor del elemento en el índice dado del arreglo localizado dentro del objeto dado en la clave dada. Notas: Si
-	el arreglo está vacío, debería devolver undefined. Si el índice dado está fuera de rango del arreglo ubicado en la clave
-	dada, debería devolver undefined. Si la propiedad en la clave dada no es un arreglo, debería devolver undefined. Si no hay
-	ninguna propiedad en la clave, debería devolverse undefined. Ejemplo de entrada: var obj = { key: ['Jamil', 'Albrey'] };
-	var output = getElementOfArrayProperty(obj, 'key', 0); console.log(output); // --> 'Jamil'</p>
-	<p>Escribir una función llamada "addObjectProperty". Dado dos objetos y una clave, "addObjectProperty" establece una nueva propiedad
-	en el primer objeto en la clave dada. El valor de esta nueva propiedad es el segundo objeto completo. var person1 = { name:
-	'Joe Blow', role: 'schlub' }; var person2 = { name: 'Mr. Burns', role: 'supervisor' }; addObjectProperty(person1, 'manager',
-	person2); console.log(person1.manager); // --> { name: 'Mr. Burns', role: 'supervisor' }
-</p>
-<p>Escribir una función llamada "getAllKeys" que devuelve un array de todas las claves del objeto de entrada. Ejemplo de entrada:
-{ name: 'Sam', age: 25, hasPets: true } Valor de retorno de la función (salida): ['name', 'age', 'hasPets'] Tenga en cuenta
-que su función debe ser capaz de manejar cualquier objeto pasado en ella. P.ej. también debe manejar una entrada como: {
-a: 'a', number: 11, hungry: true, grammyWins: 1 } Valor de retorno de la función (salida): ['a', 'number', 'hungry', 'grammyWins']</p>
+	
 </head>
 <body>
-	<script src="Length/objetos/app.js"></script>
+	<p>Escriba una función llamada getElementOfArrayProperty. Dado un objeto, una clave y un índice numérico, getElementOfArrayProperty
+		devuelve el valor del elemento en el índice dado del arreglo localizado dentro del objeto dado en la clave dada. Notas:
+		Si el arreglo está vacío, debería devolver undefined. Si el índice dado está fuera de rango del arreglo ubicado en la clave
+		dada, debería devolver undefined. Si la propiedad en la clave dada no es un arreglo, debería devolver undefined. Si no hay
+		ninguna propiedad en la clave, debería devolverse undefined. Ejemplo de entrada: var obj = { key: ['Jamil', 'Albrey'] };
+		var output = getElementOfArrayProperty(obj, 'key', 0); console.log(output); // --> 'Jamil'</p>
+	<p>Escribir una función llamada "addObjectProperty". Dado dos objetos y una clave, "addObjectProperty" establece una nueva propiedad
+		en el primer objeto en la clave dada. El valor de esta nueva propiedad es el segundo objeto completo. var person1 = { name:
+		'Joe Blow', role: 'schlub' }; var person2 = { name: 'Mr. Burns', role: 'supervisor' }; addObjectProperty(person1, 'manager',
+		person2); console.log(person1.manager); // --> { name: 'Mr. Burns', role: 'supervisor' }
+	</p>
+	<p>Escribir una función llamada "getAllKeys" que devuelve un array de todas las claves del objeto de entrada. Ejemplo de entrada:
+		{ name: 'Sam', age: 25, hasPets: true } Valor de retorno de la función (salida): ['name', 'age', 'hasPets'] Tenga en cuenta
+		que su función debe ser capaz de manejar cualquier objeto pasado en ella. P.ej. también debe manejar una entrada como: {
+		a: 'a', number: 11, hungry: true, grammyWins: 1 } Valor de retorno de la función (salida): ['a', 'number', 'hungry', 'grammyWins']</p>
+	<p>Escriba una función llamada "getSumOfAllElementsAtProperty". Dado un objeto y una key, "getSumOfAllElementsAtProperty" devuelve
+	la suma de todos los elementos del array. Notas: Si el array está vacío, debe devolver 0. Si la propiedad en la key dada
+	no es un array, debe devolver 0. Si no hay ninguna propiedad en la key dada, debe devolver 0. var obj = { key: [4, 1, 8];
+	}; var output = getSumOfAllElementsAtProperty(obj, 'key'); console.log(output); // -> 13</p>
+	
+		<script src="Length/objetos/app.js"></script>
 </body>
 </html>
