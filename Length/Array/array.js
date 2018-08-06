@@ -73,17 +73,17 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 function findShortestWordAmongMixedElements(array) {
 	let newArray = []; // se declara una variable con un arreglo vacio 
-	let cadena  = ""; // se declara una variable con un string vacio, en esta variable es donde se va a devolver el nuevo array con los string
+	let string  = ""; // se declara una variable con un string vacio, en esta variable es donde se va a devolver el nuevo array con los string
 	for (let i = 0; i < array.length; i++) { // se itera en el array, en la cadena de string que esta dentro de array.
 		if (typeof (array[i]) === "string" && array[i].length < 5) {// se la crea la condición donde en la cadena debe buscar solo valores de  string y que devuelva una longitud de menos de 5 carateres.
 			newArray.push(array[i]);// se pushea a la variable newarray el string localizado
-			cadena = newArray[0];
+			string = newArray[0];
 		}
 		else if (array.length === 0) {//si el array dado es igual a 0 o vacio debe volver una cadena vacia.
-			cadena += "";
+			string += "";
 		}
 	}
-	return cadena;
+	return string;
 
 
 }
@@ -102,4 +102,23 @@ function findSmallestNumberAmongMixedElements(array) {
 	}
 	return number;
 
+}
+
+function getLongestWordOfMixedElements(array) {
+	let longestWord = "";// se declara una varible con un string vacio
+		
+	if (array.length > 0) { // si la longitud del array es mayor a cero
+		for (let i = 0; i <= array.length; i++) { // se itera en el array que i es menor iguala la logitud del array
+			if (typeof array[i] === "string") { // se declara que el tipo de valor del array debe ser solos string
+				if (longestWord.length === 0) { //si la longitud del array es solo igual a cero longestWord es igual al valor del string 
+					longestWord = array[i];
+				}
+				if (array[i].length > longestWord.length) { // si la longitud del array es mayor a la logitud de longestWord
+					longestWord = array[i];//longetWord es igual a al array localizado con las condiciones anteriores
+				}
+			}
+		}
+
+	}
+	return longestWord;
 }
