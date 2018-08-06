@@ -80,3 +80,18 @@ function fromListToObject(array) {
 	return obj;
 
 }
+
+function transformEmployeeData(array) {
+	let data = []
+	for (let i = 0; i < array.length; i++) {
+		var obj = {}
+		for (let j = 0; j < array[i].length; j++) {
+			obj[array[i][j][0]] = array[i][j][1]
+
+		}
+		data.push(obj)
+	}
+
+	return data
+}
+
