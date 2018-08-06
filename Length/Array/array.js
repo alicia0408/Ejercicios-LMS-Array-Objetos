@@ -122,3 +122,19 @@ function getLongestWordOfMixedElements(array) {
 	}
 	return longestWord;
 }
+
+function getLargestNumberAmongMixedElements(array) {
+	let newArray = [];
+	let number = 0;
+	
+	for (let i = 0; i < array.length; i++) {
+		if (typeof (array[i]) === "number" && array[i] >= 5) { // el arreglo el valor debe ser numero y mayo igual a caracteres
+			newArray.push(array[i]);// se pushea el numero con la condicion anterior
+			number = newArray[0];// number es igual al nuevo arreglo producto de lo anterior
+		}
+		else if (array.length === 0) { // si la longitud del array no contiene numeros
+			number += 0;// number es igual a cero
+		}
+	}
+	return number;
+}
